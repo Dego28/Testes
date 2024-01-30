@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora v1.0 (BETA)</title>
+    <link rel="stylesheet" href="css/style-index.css" type="text/css">
+</head>
+
+<body>
+    <section class="container">
+        <table>
+            <tr>
+                <th colspan="4"><input type="text" id="display" placeholder="0" disabled></th>
+            </tr>
+            <tr>
+                <td><button onclick="clearDisplay()" class="span" id="C">C</button></td>
+                <td><button onclick="append('+')" class="span" id="adicao">&#43;</button></td>
+                <td><button onclick="append('-')" class="span" id="subtracao">&#8722;</button></td>
+                <td><button onclick="backspace()" class="span" id="backspace">←</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append('1')">&#49;</button></td>
+                <td><button onclick="append('2')">&#50;</button></td>
+                <td><button onclick="append('3')">&#51;</button></td>
+                <td><button onclick="append('*')" class="span" id="multiplicacao">&#215;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append('4')">&#52;</button></td>
+                <td><button onclick="append('5')">&#53;</button></td>
+                <td><button onclick="append('6')">&#54;</button></td>
+                <td><button onclick="percentage()" class="span" id="porcentagem">&#37;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append('7')">&#55;</button></td>
+                <td><button onclick="append('8')">&#56;</button></td>
+                <td><button onclick="append('9')">&#57;</button></td>
+                <td><button onclick="append('/')" class="span" id="divisao">&#247;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append('.')">,</button></td>
+                <td><button onclick="append('0')">&#48;</button></td>
+                <td colspan="2"><button onclick="evaluateAmount()" class="evaluate-button" id="resultado">&#61;</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
